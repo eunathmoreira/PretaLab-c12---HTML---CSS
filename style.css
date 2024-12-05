@@ -1,0 +1,283 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+}
+
+main {
+    background-color: rgb(192, 158, 228);
+    display:flex;
+}
+
+.navbar {
+    background-color: azure;
+    padding: 10px 20px;
+    border-bottom: 1px solid #b6d4eb;
+    align-content: center;
+    height: 70px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #320101;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: rgb(174, 25, 2);
+
+} 
+
+.hero-text {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;   
+}
+
+.hero-text h1{
+    font-size: 2rem;
+    color:rgb(59, 57, 55);
+    font-size: 2rem;
+    color: rgb(59, 57, 55);
+    margin: 20px;
+}
+.hero-text h1 span {
+    color :#a52a2a;
+}
+
+.hero-content p {
+    margin: 20px;
+    color: #a52a2a;
+}
+
+.buttong.group {
+    display: flex;
+    gap: 15px;
+    margin-top: 100px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid  #a52a2a;
+    text-decoration: none;
+    color: #a52a2a;
+    border-radius: 4px;
+    text-align: center;
+    width: 279px;
+    transition: backgroud color 0.3 ease, color 0.3 ease;
+}
+
+.btn.linkedin {
+    background-color: #320101;
+    color: #b6d4eb ;
+
+
+}
+
+.btn:hover { 
+    background-color: #320101;
+    color:#b6d4eb;
+}
+
+.hero-image img {
+    max-width: 100%;
+    background-color: #f21414;
+    height: auto;
+    width:380px;
+    padding: 50px 30px 0 50px;
+}
+
+.formacoes-section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 32px;
+    color: #282938;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .formacoes-list {
+    list-style:none;
+  }
+  .formacoes-item {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #e6e6e6;
+    padding: 60px 0;
+    font-weight: bold;
+  }
+  .formacoes-item a {
+    color: #282938;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000000;
+  }
+
+  p {
+    font-size: 16px;
+    color:#00000080;
+  }
+
+
+  .formacao-data {
+    font-size: 14px;
+    color: #777;
+    font-weight: bold;
+  }  
+
+  .sobre-mim-section {
+    background-color: rgba(216, 100, 255, 0.5);
+    padding: 60px 80px;
+  }
+  .texto {
+    color: #1C1E53;
+  }
+
+  
+  .sobre-mim-image img {
+    width: 200px;
+    border-radius: 50%;
+  }
+  .sobre-mim-text {
+    max-width: 50%;
+  }
+  .sobre-mim-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #54025f;
+  }
+  .sobre-mim-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #54025f;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(255, 100, 100, 0.5);
+    padding-top: 40px;
+  }
+  .lista-rodape li {
+    padding-top: 25px;
+    margin-left: 18%;
+    display: flex;
+    color: #1C1E53;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .estilo-icone {
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  .rede-sociais {
+    color: #1C1E53;
+    text-decoration: none;
+  }
+  .direitos {
+    padding-top: 60px;
+    color: #555;
+  }
+
+  @media(max-width: 1024px) {
+    .hero-content, .sobre-mim-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .sobre-mim-content  {
+      gap: 2px;
+    }
+    .sobre-mim-text, .hero-text {
+      max-width: 100%;
+    }
+    .hero-section, .formacoes-section, .sobre-mim-section {
+      padding: 50px 20px;
+    }
+    .formacoes-list {
+      padding:0;
+    }
+    .button-group {
+      justify-content: center;
+    }
+    .hero-image img {
+      width: 580px;
+    }
+  }
+  @media (max-width:768px) {
+    .hero-section {
+      padding: 40px 15px;
+    }
+    .container-principal {
+      display: block;
+    }
+    .formacoes-section {
+      padding: 30px 10px;
+    }
+    .sobre-mim-section {
+      padding: 30px 15px;
+    }
+    .btn {
+      padding: 10px 15 px;
+    }
+  }
+  @media(max-width:480px){
+    .hero-text h1 {
+      font-size: 24px;
+    }
+    .hero-text p, .sobre-mim-text p {
+      font-size: 14px;
+    }
+    .sobre-mim-content {
+      gap:2px
+    }
+    .sobre-mim-content h2 {
+      margin-top: 20px;
+    }
+    .btn{
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+    .button-group{
+      margin-top: 50px;
+    }
+    .formacao-item {
+      gap: 32px;
+    }
+    footer {
+      padding: 10px;
+    }
+}
+
+
